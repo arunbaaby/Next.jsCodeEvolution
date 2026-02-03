@@ -1,6 +1,6 @@
-import "./globals.css";
+import "../globals.css";
 
-export default function RootLayout({
+export default function AuthRootLayout({
   children,
 }: {
   children: React.ReactNode;
@@ -9,11 +9,11 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <header className="">
-          <h1 className="bg-red-400">Header</h1>
+          <h1 className="bg-red-400">Custom Auth Header</h1>
         </header>
         {children}
         <footer>
-          <h1 className="bg-green-500">Footer</h1>
+          <h1 className="bg-green-500">Custom Auth Footer</h1> 
         </footer>
       </body>
     </html>
